@@ -1,14 +1,28 @@
-
-
+<% include ./partials/header %>
+<div class="container">
+<div class="text-center header">
 <h1>Hurricane Irma Wind Speed Tracker</h1>
 <p>Information based in Tampa, FL.</p>
+</div>
+<div class="primary text-center">
+</div>
 <h3>Current Wind Speed:</h3>
 
   <% if(weather) { %>
   <p><%=weather.wind.speed%> MPH</p>
   <% }; %>
     
-<h3>With Gusts Up To:</h3>
+<h3>Current Gusts Up To:</h3>
 <% if(weather) { %>
 <p><%=weather.wind.gust%> MPH</p>
 <% }; %>
+
+
+<!--<h3>Max Sustained Speed Recorded:</h3>-->
+<!--<% var currentSpeed = parseInt(weather.wind.speed); %>-->
+<!--<% var maxSpeed = 0; %>-->
+<!--<% function speedRecord (currentSpeed, maxSpeed) { %>-->
+<!--  <p><%= Math.max(currentSpeed, maxSpeed); %> MPH</p>-->
+<!--<% }; %>-->
+</div>
+<% include ./partials/footer %>

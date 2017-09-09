@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.header {
+    padding-bottom: 50px;
+}
