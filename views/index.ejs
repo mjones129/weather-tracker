@@ -4,5 +4,11 @@
 <p>Information based in Tampa, FL.</p>
 <h3>Current Wind Speed:</h3>
 
-  <p><%= JSON.stringify(weather.wind); %></p>
+  <% if(weather) { %>
+  <p><%=weather.wind.speed%> MPH</p>
+  <% }; %>
     
+<h3>With Gusts Up To:</h3>
+<% if(weather) { %>
+<p><%=weather.wind.gust%> MPH</p>
+<% }; %>
